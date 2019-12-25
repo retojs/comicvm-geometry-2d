@@ -1,0 +1,50 @@
+{
+  "name": "comicvm-geometry-2d",
+  "version": "1.0.0",
+  "description": "A set of geometric classes like Point, Line, Rectangle etc.",
+  "main": "index.ts",
+  "scripts": {
+    "start": "webpack-dev-server --history-api-fallback --inline --progress --open",
+    "test:karma": "karma start",
+    "test:karma:debug": "karma start --auto-watch --no-single-run",
+    "test:jest": "jest",
+    "test:jest:watch": "jest --watch",
+    "test:jest:debug": "node --inspect-brk node_modules/jest/bin/jest.js --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/retojs/comicvm-geometry-2d.git"
+  },
+  "author": "Reto J.S.",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/node": "^10.12.18",
+    "html-webpack-plugin": "^3.2.0",
+    "jasmine-core": "^3.3.0",
+    "jest": "^23.6.0",
+    "jest-canvas-mock": "^1.1.0",
+    "karma": "^3.1.4",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-cli": "^2.0.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-jasmine-html-reporter": "^1.4.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^3.0.5",
+    "mini-css-extract-plugin": "^0.4.5",
+    "node-sass": "^4.13.0",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "ts-jest": "^23.10.5",
+    "ts-loader": "^5.3.0",
+    "typescript": "^3.1.6",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "bugs": {
+    "url": "https://github.com/retojs/comicvm-geometry-2d/issues"
+  },
+  "homepage": "https://github.com/retojs/comicvm-geometry-2d#readme"
+}
