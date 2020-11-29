@@ -1,5 +1,10 @@
 # ComicVM Geometry 2D
 
+## How to publish a typescript package
+
+* https://medium.com/cameron-nokes/the-30-second-guide-to-publishing-a-typescript-package-to-npm-89d93ff7bccd
+* https://itnext.io/step-by-step-building-and-publishing-an-npm-typescript-package-44fe7164964c
+
 ## How to Use This Code as a Submodule
 
 Add the submodule:

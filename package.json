@@ -1,9 +1,11 @@
 {
   "name": "comicvm-geometry-2d",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A set of geometric classes like Point, Line, Rectangle etc.",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "compile": "node_modules/.bin/tsc",
     "start": "webpack-dev-server --history-api-fallback --inline --progress --open",
     "test:karma": "karma start",
     "test:karma:debug": "karma start --auto-watch --no-single-run",
