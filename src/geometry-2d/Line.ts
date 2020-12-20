@@ -80,6 +80,11 @@ export class Line {
         return this;
     }
 
+    invert(): Line {
+        [this.from, this.to] = [this.to, this.from];
+        return this;
+    }
+
     clone(): Line {
         return new Line(this.from.clone(), this.to.clone());
     }
