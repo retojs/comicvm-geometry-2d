@@ -109,6 +109,9 @@ export class Line {
         if (this.isVertical) {
             return line.getPointAtX(this.from.x);
         }
+        if (line.isVertical) {
+            return this.getPointAtX(line.from.x);
+        }
 
         const x = (line.verticalIntercept - this.verticalIntercept) / (this.gradient - line.gradient);
         const y = this.verticalIntercept + this.gradient * x;
