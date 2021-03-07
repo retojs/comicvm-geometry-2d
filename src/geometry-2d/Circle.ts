@@ -3,25 +3,27 @@ import { Line } from "./Line";
 
 export class Circle {
 
-    origin: Point;
-    radius: number;
+    static fromPoint(origin: Point, radius: number) {
+        return new Circle(origin.x, origin.y, radius);
+    }
 
-    constructor(origin: Point, radius: number) {
-        this.origin = origin;
-        this.radius = radius
+    constructor(
+        public x: number,
+        public y: number,
+        public radius: number
+    ) {
     }
 
     intersection(line: Line): Point[] {
         // make circle center the origin of our coordinate system:
-        line.translate(-this.origin.x, -this.origin.y);
+        line.translate(-this.x, -this.y);
 
         // calculate intersection:
-        //
-        const result = [new Point(0, 0), new Point(0,0)];
+        const result = [new Point(0, 0), new Point(0, 0)];
 
 
         // move coordinates back to normal
-        result.forEach(point => point.translate(this.origin.x, this.origin.y));
+        result.forEach(point => point.translate(this.x, this.y));
 
         return [new Point(0, 0), new Point(0, 0)];
     }

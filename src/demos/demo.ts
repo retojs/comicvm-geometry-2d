@@ -6,5 +6,5 @@ const ORIGIN = PANE.center;
 const RADIUS = PANE.height / 3;
 
 export function runDemo() {
-    const circle = new Circle(ORIGIN, RADIUS);
+    const circle = Circle.fromPoint(ORIGIN, RADIUS);
 }
